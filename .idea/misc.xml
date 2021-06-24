@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/skoml/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/rain.xml" value="0.19444444444444445" />
+        <entry key="..\:/Users/skoml/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/shape_gradient_left.xml" value="0.19444444444444445" />
+        <entry key="..\:/Users/skoml/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/shape_gradient_right.xml" value="0.19444444444444445" />
+        <entry key="..\:/Users/skoml/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/shape_oval_navy.xml" value="0.19444444444444445" />
+        <entry key="..\:/Users/skoml/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/shape_oval_white.xml" value="0.19444444444444445" />
+        <entry key="..\:/Users/skoml/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/shape_rectangle_gray.xml" value="0.19444444444444445" />
+        <entry key="..\:/Users/skoml/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/shape_rounded_rectangle_gray.xml" value="0.19444444444444445" />
+        <entry key="..\:/Users/skoml/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/shape_rounded_rectangle_gray_2.xml" value="0.19444444444444445" />
+        <entry key="..\:/Users/skoml/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/shape_rounded_rectangle_white.xml" value="0.19444444444444445" />
+        <entry key="..\:/Users/skoml/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/snow.xml" value="0.19444444444444445" />
+        <entry key="..\:/Users/skoml/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/vd_ic_scout_carrot.xml" value="0.19444444444444445" />
+        <entry key="..\:/Users/skoml/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/vd_ic_user_carrot.xml" value="0.19444444444444445" />
+        <entry key="..\:/Users/skoml/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/wind.xml" value="0.19444444444444445" />
+        <entry key="..\:/Users/skoml/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_main.xml" value="0.21467391304347827" />
+      </map>
+    </option>
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
