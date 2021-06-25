@@ -9,7 +9,6 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.Reader;
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
@@ -53,14 +52,15 @@ public class FileParser {
                 List<String> strTemp = Arrays.asList(temp.split("  "));
                 int size = strTemp.size();
                 CityModel model = new CityModel();
-                model.setCityName(strTemp.get(2));
-                model.setCountry(strTemp.get(size - 6));
-                model.setTimezone(strTemp.get(size - 2));
+
                 for (int i = 0; i < strTemp.size() - 1; i++) {
                     String element = strTemp.get(i);
                     if ((element.contains(".") && isDouble(element)) && (strTemp.get(i + 1).contains(".") && isDouble(strTemp.get(i + 1)))) {
                         model.setLatitude(Double.parseDouble(element));
                         model.setLongitude(Double.parseDouble(strTemp.get(i + 1)));
+                        model.setCityName(strTemp.get(2));
+                        model.setCountry(strTemp.get(i + 4));
+                        model.setTimezone(strTemp.get(size - 2));
                     }
                 }
                 cityModels.add(model);
