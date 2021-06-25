@@ -2,6 +2,7 @@ package com.example.myapplication.cities;
 
 import android.content.Context;
 
+import com.example.myapplication.cities.alexei.FileParser;
 import com.example.myapplication.cities.sergey.CitiesTool;
 
 public class CityProvider {
@@ -9,6 +10,8 @@ public class CityProvider {
         switch (solution) {
             case SERGEY:
                 return new CitiesTool(context).getNearestCity(latitude, longitude);
+            case ALEXEY:
+                return new FileParser(context).getCity(latitude, longitude);
             default:
                 throw new IllegalStateException("Not implemented");
         }

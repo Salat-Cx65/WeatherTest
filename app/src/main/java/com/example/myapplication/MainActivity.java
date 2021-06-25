@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.text.format.DateFormat;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextClock;
 import android.widget.TextView;
@@ -45,6 +46,9 @@ public class MainActivity extends AppCompatActivity {
     TextView precipitation_remote;
     @BindView(R.id.weather_summary_remote)
     TextView weather_summary_remote;
+    @BindView(R.id.nextCity)
+    Button nextCity;
+
     private Weather weather;
 
     @Override
@@ -52,6 +56,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
+
+        nextCity.setOnClickListener(v -> loadCityDetails());
 
         loadCityDetails();
     }
@@ -76,6 +82,7 @@ public class MainActivity extends AppCompatActivity {
                 pd.setMessage("Loading...");
                 pd.setCancelable(false);
                 pd.setProgressStyle(android.R.style.Widget_ProgressBar_Large);
+                pd.show();
             }
 
             @Override
@@ -84,7 +91,7 @@ public class MainActivity extends AppCompatActivity {
                 do {
                     double lat = doubleRandom(90.0, -90.0);
                     double lon = doubleRandom(180.0, -180.0);
-                    city = CityProvider.getCity(MainActivity.this, lat, lon, CityProvider.Solution.SERGEY);
+                    city = CityProvider.getCity(MainActivity.this, lat, lon, CityProvider.Solution.ALEXEY);
                 }
                 while (city == null);
 
@@ -106,7 +113,7 @@ public class MainActivity extends AppCompatActivity {
 
         String timezone = city.getTimeZone();
 
-        System.out.println("updateRemoteData: " + timezone + ", " + city.getLatitude() + ", " + city.getLongitude());
+        System.out.println("updateRemoteData: " + city);
         if (TextUtils.isEmpty(timezone))
             timezone = TimeZone.getDefault().getID();
 
